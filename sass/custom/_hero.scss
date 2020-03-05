@@ -1,0 +1,23 @@
+// Extanding on the hero component - using bulma's naming 
+.hero {
+
+    .title {
+        font-size: 4rem;
+        margin-bottom: 0.5em;
+    }
+
+    .description {
+        font-size: 1.5rem;
+        color: $grey-light;
+    }
+}
+
+// Brut force navbar fixes
+.navbar-end {
+    justify-content: flex-end;
+    margin-left: auto;
+}
+.navbar, .navbar-menu, .navbar-start, .navbar-end {
+    align-items: stretch;
+    display: flex;
+}

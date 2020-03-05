@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../fonts/Inter-Medium.woff2?v=3.12") format("woff2"),
+    url("../fonts/Inter-Medium.woff?v=3.12") format("woff");
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url("../fonts/Inter-ExtraBold.woff2?v=3.12") format("woff2"),
+    url("../fonts/Inter-ExtraBold.woff?v=3.12") format("woff");
+}
+
+h1, h2 {
+    font-weight: $weight-bold;
+    line-height: 1.1;
+    letter-spacing: -0.06em;
+    margin-bottom: 0.5em;
+}
