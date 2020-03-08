@@ -1,15 +1,27 @@
 .footer {
-    
-    position: relative;
-    background-color: $grey-lightest;
-    padding-bottom: $size-1;
-    
+
+    &__main {
+        position: relative;
+        background-color: $grey-lightest;
+        padding-bottom: $size-1;
+    }
+
     &__title {
-        margin-top: -10px;
+        margin-top: -4px;
     }
 
     .columns {
-        padding-top: $size-1;
+        padding-top: $size-6;
+    }
+
+    @media screen and (min-width: $desktop) {
+        &__title {
+            margin-top: -10px;
+        }
+
+        .columns {
+            padding-top: $size-1;
+        }
     }
 
     .image {
@@ -23,28 +35,73 @@
         margin-bottom: $size-7;
     }
 
-    &__sub {
+    &__note {
         border-top: 2px solid $white;
         background-color: $grey-lightest;
 
-        .container {
+        &__wrapper {
             display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
+            flex-direction: column;
             padding-top: $block-spacing;
             padding-bottom: $block-spacing;
         }
-        &__link {
-            margin-inline-start: 1rem;
+
+        &__links {
+            justify-content: end;
+            margin-top: 1rem;
+
         }
+
+        &__link {
+            padding-inline-start: 0;
+            padding-inline-end: 1rem;
+        }
+
+        @media screen and (min-width: $desktop) {
+            &__wrapper {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding-top: $block-spacing;
+                padding-bottom: $block-spacing;
+            }
+
+            &__links {
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+                margin-top: 0;
+            }
+
+            &__link {
+                padding-inline-start: 1rem;
+                padding-inline-end: 0;
+            }
+        }
+
+
         a {
             color: $primary;
             transition: color 0.1s ease-in;
+            text-decoration: underline;
 
             &:hover {
                 color: #D57670;
             }
         }
     }
+
+    .container {
+        padding-right: $block-spacing;
+        padding-left: $block-spacing;
+    }
+
+    @media screen and (min-width: $desktop) {
+        .container {
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+
 }
