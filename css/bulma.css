@@ -1547,6 +1547,49 @@ h1, h2 {
   display: flex;
 }
 
+.footer {
+  position: relative;
+  background-color: #eef0f1;
+  padding-bottom: 3rem;
+}
+.footer__title {
+  margin-top: -10px;
+}
+.footer .columns {
+  padding-top: 3rem;
+}
+.footer .image {
+  width: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.footer .mailto {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+.footer__sub {
+  border-top: 2px solid white;
+  background-color: #eef0f1;
+}
+.footer__sub .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.footer__sub__link {
+  margin-inline-start: 1rem;
+}
+.footer__sub a {
+  color: #ae0f39;
+  transition: color 0.1s ease-in;
+}
+.footer__sub a:hover {
+  color: #D57670;
+}
+
 .box {
   background-color: white;
   border-radius: 6px;
@@ -9428,11 +9471,6 @@ label.panel-block:hover {
   .section.is-large {
     padding: 18rem 1.5rem;
   }
-}
-
-.footer {
-  background-color: #fcfdfd;
-  padding: 3rem 1.5rem 6rem;
 }
 
 /*# sourceMappingURL=bulma.css.map */

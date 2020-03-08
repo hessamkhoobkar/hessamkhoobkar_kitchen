@@ -1,0 +1,50 @@
+.footer {
+    
+    position: relative;
+    background-color: $grey-lightest;
+    padding-bottom: $size-1;
+    
+    &__title {
+        margin-top: -10px;
+    }
+
+    .columns {
+        padding-top: $size-1;
+    }
+
+    .image {
+        width: 100%;
+        border-radius: $radius-large;
+        overflow: hidden;
+    }
+
+    .mailto {
+        margin-top: $size-3;
+        margin-bottom: $size-7;
+    }
+
+    &__sub {
+        border-top: 2px solid $white;
+        background-color: $grey-lightest;
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: $block-spacing;
+            padding-bottom: $block-spacing;
+        }
+        &__link {
+            margin-inline-start: 1rem;
+        }
+        a {
+            color: $primary;
+            transition: color 0.1s ease-in;
+
+            &:hover {
+                color: #D57670;
+            }
+        }
+    }
+}
