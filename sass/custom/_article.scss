@@ -1,0 +1,32 @@
+.article {
+
+    &__header {
+        padding-top: $size-3;
+        background-color: $black;
+        color: $white;
+
+        &__content.column {
+            padding-top: $size-1;
+        }
+
+        .column {
+            padding-bottom: 0;
+        }
+    }
+
+    &__content {
+        margin-top: -96px;
+
+
+        &__wrapper {
+            background-color: $white;
+        }
+
+        .content {
+            width: 40rem;
+            margin: auto;
+            padding-top: $size-1;
+            padding-bottom: $size-1;
+        }
+    }
+}

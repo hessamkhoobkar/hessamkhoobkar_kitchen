@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>hessam khoobkar - Blog</title>
+    <link rel="stylesheet" href="./css/bulma.css">
+</head>
+
+<body>
+
+    <article class="article">
+        <header>
+            <!-- Navbar -->
+            <nav class="navbar is-black">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a class="navbar-item" href="#">
+                            <img src="./image/Khoobkar.png">
+                        </a>
+                    </div>
+                    <div class="navbar-menu is-active">
+                        <div class="navbar-end">
+                            <a class="navbar-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="-5 -7 24 24" width="48"
+                                    height="48" preserveAspectRatio="xMinYMin">
+                                    <path
+                                        d="M1 0h5a1 1 0 110 2H1a1 1 0 110-2zm7 8h5a1 1 0 010 2H8a1 1 0 110-2zM1 4h12a1 1 0 010 2H1a1 1 0 110-2z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- / Navbar -->
+            <div class="article__header">
+                <div class="container">
+                    <div class="columns is-6">
+                        <div class="column article__header__content">
+                            <h1 class="article__title is-size-1">
+                                Bootstrap Navbar Guide and Free Navigation Examples
+                            </h1>
+                            <div class="article__info">
+                                <p class="article__date">
+                                    20. January 2020
+                                </p>
+                                <p class="article__read_time">
+                                    7 min read
+                                </p>
+                            </div>
+                        </div>
+                        <div class="column article__header__media">
+                            <figure class="image is-4by3">
+                                <img src="https://bulma.io/images/placeholders/640x480.png">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <section class="article__content">
+            <div class="container">
+                <div class="columns is-centered">
+                    <div class="column is-three-quarters article__content__wrapper">
+                        <div class="content">
+                            <h2>
+                                The problem
+                            </h2>
+                            <p>
+                                Email marketers were limited by the functionality of the current segment builder tool.
+                                They
+                                wanted to be able to send more meaningful and targeted emails to specific groups of
+                                people,
+                                rather than sending generic emails to their entire subscriber list. The new segment
+                                builder
+                                tool
+                                needed to empower email marketers to segment their subscribers based on rules that they
+                                could
+                                define. That would allow them to send more targeted email campaigns which would decrease
+                                costs
+                                and increase conversions.
+                            </p>
+
+                            <h2>
+                                Research and discovery
+                            </h2>
+                            <p>
+                                Over the years we’ve been collecting feedback from customers regarding how they’d like
+                                to be
+                                able to organise their subscribers into segments. We sorted through customer feedback to
+                                figure
+                                out the requirements for the new segment builder. There were a lot of different feature
+                                requests
+                                and it would take forever to get them all built, so we listed out the main features,
+                                prioritised
+                                them and concentrated on the ones that would make the most impact.
+                            </p>
+                            <p>
+                                During this requirements-gathering phase we also looked at competitor products and
+                                realised
+                                that
+                                our differentiator would be to concentrate on simplicity of use, cutting back on
+                                unnecessary
+                                features and complexity.
+
+                            </p>
+                            <p>
+                                The key ingredient to creating segments is defining the rules that govern them. If we
+                                wanted
+                                to
+                                create a segment of people who work as designers and developers in Sydney, we would need
+                                a
+                                way
+                                to define a set of rules that captured those people. After much deliberation we decided
+                                that
+                                “OR” and “AND” logical operators would give us the complexity we needed to create such
+                                rules
+                                (above). Each rule could be based on the name, email address, date subscribed, location
+                                or
+                                custom field of the person.
+                            </p>
+
+                            <h2>
+                                Wireframes and sketches
+                            </h2>
+                            <p>
+                                Once we had planned out what we were going to build, the development team was able to
+                                start
+                                rebuilding the back-end for speed and stability. I started on the interface design in
+                                parallel
+                                with them to save time, and quickly sketched out some ideas on how this page would
+                                function.
+                                My
+                                focus was on creating maximal power with minimal UI. The page (above right) would
+                                basically
+                                consist of a rule builder at the top followed by a results table of the people in the
+                                segment.
+                            </p>
+                            <p>
+                                After exploring a bunch of ideas for the rule builder (above left), I ended up stripping
+                                it
+                                back
+                                to a simple list of rules. Rules connected by an “OR” operator were grouped together and
+                                these
+                                “OR” groups could be connected with an “AND” operator. I tried to structure rules so
+                                that
+                                they
+                                maintained a simple sentence structure, avoiding the use of cryptic “robot talk”.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 
+    <section class="article-content has-media news container">
+        <section class="article-body has-media news content"
+            style="width: 40rem; margin: auto; background-color: white;">
+            <div id="node-0" class="article-pharagraph">
+                <p class="text ">The Chinese government has earmarked additional funding for a
+                    blockchain-based trade finance platform developed and led by the country's central bank.
+                </p>
+            </div>
+            <div id="node-1" class="article-pharagraph">
+                <p class="text ">The People's Bank of China (PBoC) is to receive 32.35 million yuan (around
+                    $4.7 million) in "special funding" from the government over a three-year period for
+                    research and development into the trade initiative, officials <a
+                        href="https://www.techinasia.com/first-digital-trust-banks-3m-nogle" target="_blank"
+                        rel="noopener noreferrer" data-reactroot="">confirmed</a> to local media. </p>
+            </div>
+            <div id="node-2" class="article-pharagraph">
+                <p class="text ">Known officially as the Bay Area Trade Finance Blockchain Platform, banks
+                    and businesses store order, logistics and transaction data on the system to create new
+                    transaction efficiencies. It's also said to provide regulators with greater oversight
+                    and gives small and medium-sized enterprises (SMEs) access to more sophisticated
+                    financing tools. </p>
+            </div>
+            <div id="node-3" class="article-pharagraph">
+                <p class="text ">Led by PBoC's Digital Currency Research Lab, the trade finance platform is
+                    available to businesses based in Shenzhen, a mainland city neighboring Hong Kong. Major
+                    commercial banks, including Bank of China, Ping An and Standard Chartered, were invited
+                    to trial the platform when it <a
+                        href="/pboc-backed-blockchain-trade-finance-platform-enters-test-phase"
+                        data-reactroot="">entered</a> the public testing phase in September 2018. </p>
+            </div>
+            <div id="node-4" class="article-pharagraph">
+                <p class="text ">In January, Xinhua <a
+                        href="http://www.xinhuanet.com/english/2020-02/21/c_138806484.htm" target="_blank"
+                        rel="noopener noreferrer" data-reactroot="">reported</a> the platform was used by a
+                    network of 38 banks with total combined volumes exceeding 90 billion yuan ($13 billion).
+                    The new funding from Beijing is expected to help PBoC drive adoption for its trade
+                    finance platform among businesses. </p>
+            </div>
+            <div id="node-5" class="article-pharagraph">
+                <p class="text ">A <a
+                        href="https://www.mckinsey.com/~/media/McKinsey/Industries/Financial%20Services/Our%20Insights/The%20power%20of%20many%20Corporate%20banking%20in%20an%20ecosystem%20world/The-power-of-many-Corporate-banking-in-an-ecosystem-world.ashx"
+                        target="_blank" rel="noopener noreferrer" data-reactroot="">report</a> from McKinsey
+                    said the platform could "create significant new opportunities" for banks, SMEs and
+                    service providers. As well as lower interest rates, analysts estimated loan approval
+                    times could fall to as little as 20 minutes.</p>
+            </div>
+            <div id="node-6" class="article-pharagraph">
+                <p class="text ">Chinese President Xi Jinping <a
+                        href="/president-xi-says-china-should-seize-opportunity-to-adopt-blockchain"
+                        data-reactroot="">said</a> last autumn the country had to "seize the opportunity"
+                    when it came to blockchain technology, including increasing government investment and
+                    development in core technology areas. </p>
+            </div>
+            <div class="end"><i class="pentagon"></i></div>
+            <div class="tags">
+                <h4>Read more about...</h4><span class="tag"><a href="/tag/china">China</a></span><span
+                    class="tag"><a href="/tag/pboc">PBOC</a></span><span class="tag"><a
+                        href="/tag/trade-finance">Trade Finance</a></span><span class="tag"><a
+                        href="/tag/government-funding">Government Funding</a></span>
+            </div>
+            <div class="article-disclosure">
+                <details>
+                    <summary class="heading">Disclosure
+                        <!--  <a>Read
+            <!-- More
+            <!--  </a></summary>
+        <p>The leader in blockchain news, CoinDesk is a media outlet that strives for the
+            highest journalistic standards and abides by a <a target="_blank" href="/editorial-policy"
+                data-reactroot="">strict set of editorial policies</a>.
+            CoinDesk is an independent operating subsidiary of Digital Currency Group, which
+            invests in cryptocurrencies and blockchain startups.</p>
+        </details>
+        </div>
+        </section>
+        <div class="erd_scroll_detection_container erd_scroll_detection_container_animation_active">
+            <div dir="ltr" class="erd_scroll_detection_container"
+                style="position: absolute; flex: 0 0 auto; overflow: hidden; z-index: -1; visibility: hidden; width: 100%; height: 100%; left: 0px; top: 0px;">
+                <div class="erd_scroll_detection_container"
+                    style="position: absolute; flex: 0 0 auto; overflow: hidden; z-index: -1; visibility: hidden; left: -18px; top: -18px; right: -17px; bottom: -17px;">
+                    <div
+                        style="position: absolute; flex: 0 0 auto; overflow: scroll; z-index: -1; visibility: hidden; width: 100%; height: 100%;">
+                        <div style="position: absolute; left: 0px; top: 0px; width: 1295px; height: 1201px;">
+                        </div>
+                    </div>
+                    <div
+                        style="position: absolute; flex: 0 0 auto; overflow: scroll; z-index: -1; visibility: hidden; width: 100%; height: 100%;">
+                        <div style="position: absolute; width: 200%; height: 200%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        -->
+    </article>
+
+    <!-- Page footer -->
+    <footer class="footer">
+        <div class="footer__main">
+            <div class="container">
+                <img class="footer__title" src="./image/footer__title.png" alt="Stop by and say hi">
+                <div class="columns">
+                    <div class="column is-half-widescreen is-two-fifths-fullhd content">
+                        <p>
+                            I eat and breathe the web. I never feel more creative while designing an interface. And I
+                            never feel more powerful while developing a web app. I feel lucky to be doing something that
+                            I love so much.
+                        </p>
+                        <p>
+                            I'm always open to new projects, challenges, and collaborations. Hit me with questions,
+                            invitations, or just a simple hi.
+                        </p>
+                        <p>
+                            No faking it till making it, let be ourselves as we are.
+                        </p>
+                        <a class="button is-primary mailto"
+                            href="mailto:someone@yoursite.com">amirhessam.dev@gmail.com</a>
+                        <p class="is-size-7 has-text-black-ter">Reply time: within 1-2 working days . using gmail
+                            becuase of spam issues</p>
+                    </div>
+                    <div class="column is-half-widescreen is-two-fifths-fullhd is-offset-one-fifth-fullhd">
+                        <figure class="image">
+                            <img src="./image/hessamKhoobkar.jpg" alt="hessamKhoobkar">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__note">
+            <div class="container">
+                <div class="footer__note__wrapper">
+                    <div class="footer__note__info">
+                        <p>
+                            Copyright © 2020. Made by love. Powered by <a href="#">Gridsome</a>. Deployed by <a
+                                href="#">Netlify</a>. Hostted on <a href="#">GitHub</a>.
+                        </p>
+                    </div>
+                    <div class="footer__note__links">
+                        <a class="footer__note__link" href="#">
+                            Sitemap
+                        </a>
+                        <a class="footer__note__link" href="#">
+                            RSS
+                        </a>
+                        <a class="footer__note__link" href="#">
+                            FeedIndex
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- / Page footer -->
+
+</body>
+
+</html>

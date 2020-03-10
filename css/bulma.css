@@ -1578,6 +1578,7 @@ h1, h2 {
 .footer__note {
   border-top: 2px solid white;
   background-color: #eef0f1;
+  font-size: 0.85rem;
 }
 .footer__note__wrapper {
   display: flex;
@@ -1630,6 +1631,30 @@ h1, h2 {
     padding-right: 0;
     padding-left: 0;
   }
+}
+
+.article__header {
+  padding-top: 2rem;
+  background-color: #011628;
+  color: white;
+}
+.article__header__content.column {
+  padding-top: 3rem;
+}
+.article__header .column {
+  padding-bottom: 0;
+}
+.article__content {
+  margin-top: -96px;
+}
+.article__content__wrapper {
+  background-color: white;
+}
+.article__content .content {
+  width: 40rem;
+  margin: auto;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .box {
