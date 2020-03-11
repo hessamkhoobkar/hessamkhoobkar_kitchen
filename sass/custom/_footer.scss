@@ -94,8 +94,8 @@
     }
 
     .container {
-        padding-right: $block-spacing;
-        padding-left: $block-spacing;
+        padding-right: 1rem;
+        padding-left: 1rem;
     }
 
     @media screen and (min-width: $desktop) {

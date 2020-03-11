@@ -13,11 +13,6 @@
 }
 
 // Brut force navbar fixes
-.navbar-end {
-    justify-content: flex-end;
-    margin-left: auto;
-}
-.navbar, .navbar-menu, .navbar-start, .navbar-end {
-    align-items: stretch;
-    display: flex;
+.navbar>.container {
+    justify-content: space-between;
 }

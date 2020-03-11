@@ -2,6 +2,8 @@
 
     &__header {
         padding-top: $size-3;
+        padding-right: 1rem;
+        padding-left: 1rem;
         background-color: $black;
         color: $white;
 
@@ -9,24 +11,40 @@
             padding-top: $size-1;
         }
 
-        .column {
-            padding-bottom: 0;
-        }
     }
 
-    &__content {
-        margin-top: -96px;
+    .content {
+        padding-right: 1rem;
+        padding-left: 1rem;
+        padding-top: $size-1;
+        padding-bottom: $size-1;
+    }
 
+    @media screen and (min-width: $desktop) {
+        &__header {
+            padding-right: 0;
+            padding-left: 0;
 
-        &__wrapper {
-            background-color: $white;
+            .column {
+                padding-bottom: 0;
+            }
         }
 
-        .content {
-            width: 40rem;
-            margin: auto;
-            padding-top: $size-1;
-            padding-bottom: $size-1;
+        &__content {
+            margin-top: -96px;
+
+
+            &__wrapper {
+                background-color: $white;
+            }
+
+            .content {
+                width: 40rem;
+                margin: auto;
+
+                padding-right: 0;
+                padding-left: 0;
+            }
         }
     }
 }
